@@ -1,0 +1,249 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    
+    &-header {
+        flex:1;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        max-height: 50px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+        .title {
+         font-size: 28px;
+        }
+    }
+
+    &-content {
+        flex:1;
+        padding: 20px;
+        max-width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-around;
+        .app-panel {
+            flex: 0 0 calc(100%/2 - 20px);
+            max-width: calc(100%/2 - 20px);
+            background: #ecd5ef;
+            border-radius: 10px;
+            padding:15px;
+        }
+    }
+
+  
+}
+
+.card {
+    border-radius: 5px;
+    background: #ffffff;
+    padding:15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.items {
+    border: 1px solid #ecd5ef;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    .item {
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #ecd5ef;
+    }
+    .item-no-height {
+        width: 50px;
+        border: 1px solid #ecd5ef;
+    }
+}
+
+.flex{
+    &-display {
+        &-flex {
+            display: flex;
+        }
+        &-inline-flex {
+            display: inline-flex;
+        }
+    }
+    
+    &-direction {
+        &-row {
+            flex-direction: row;
+        }
+        &-row-reverse {
+            flex-direction: row-reverse;
+        }
+        &-column {
+            flex-direction: column;
+        }
+        &-column-reverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-wrap {
+        &-wrap {
+            flex-wrap: wrap;
+        }
+        &-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    }
+
+    &-justify-content {
+        &-f-start {
+            justify-content: flex-start;
+        }
+        &-f-end {
+            justify-content: flex-end;
+        }
+        &-center {
+            justify-content: center;
+        }
+        &-space-between {
+            justify-content: space-between;
+        }
+        &-space-around {
+            justify-content: space-around;
+        }
+        &-space-evenly {
+            justify-content: space-evenly;
+        }
+       
+    }
+
+    &-align-items {
+        &-stretch {
+            align-items: stretch;
+        }
+        &-flex-start {
+            align-items: flex-start;
+        }
+        &-flex-end {
+            align-items: flex-end;
+        }
+        &-center {
+            align-items: center;
+        }
+        &-base-line {
+            align-items: baseline;
+        }
+    }
+
+    &-align-content {
+        &-stretch {
+            align-content: stretch;
+        }
+        &-flex-start {
+            align-content: flex-start;
+        }
+        &-flex-end {
+            align-content: flex-end;
+        }
+        &-center {
+            align-content: center;
+        }
+        &-base-line {
+            align-content: baseline;
+        }
+    }
+}
+
+.card-min-height {
+    min-height: 100px;
+}
+
+.pseudo-class {
+    &-active {
+        &:link {
+            color: red;
+        }
+        &:visited {
+            color: green;
+        }
+        &:hover {
+            color: hotpink;
+        }
+        &:active {
+            color: blue;
+        }
+    }
+    &-first-child {
+        div:first-child {
+            background: hotpink;
+        }
+    }
+    &-last-child {
+        div:last-child {
+            background: hotpink;
+        }
+    }
+    &-nth-child {
+        div:nth-child(2) {
+            background: hotpink;
+        }
+    }
+    &-nth-last-child {
+        div:nth-last-child(2) {
+            background: hotpink;
+        }
+    }
+    &-first-of-type {
+        div:first-of-type {
+            background: hotpink;
+        }
+    }
+    &-nth-of-type {
+        div:nth-of-type(2) {
+            background: hotpink;
+        }
+    }
+    &-nth-last-of-type {
+        div:nth-last-of-type(2) {
+            background: hotpink;
+        }
+    }
+    &-only-of-type {
+        p:only-of-type {
+            background: hotpink;
+        }
+    }
+}
+
+.pseudo-element {
+    &-after {
+        div::after{
+            content: 'this text from pseudo element - after'
+        }
+    }
+    &-before {
+        div::before{
+            content: 'this text from pseudo element - before'
+        }
+    }
+    &-first-letter {
+        div::first-letter{
+            font-size: 28px;
+            color: blueviolet;
+        }
+    }
+    &-first-line {
+        div::first-line{
+            font-size: 28px;
+            color: blueviolet;
+        }
+    }
+
+}
+

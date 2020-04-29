@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Handling with CSS hands on</title>
+</head>
+
+<body class="app">
+    <header class="app-header">
+        <h1 class="title">flexbox & Pseudo classes / element</h1>
+    </header>
+    <main class="app-content">
+        <section class="app-panel">
+            <div class="card">
+                <h2 class="title">display : flex (default)</h2>
+                <div class="items flex-display-flex">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+                <div class="items flex-display-flex">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">display : inline-flex</h2>
+                <div class="items flex-display-inline-flex">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+                <div class="items flex-display-inline-flex">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex direction: row (default)</h2>
+                <div class="items flex-display-flex flex-direction-row">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex direction: row-reverse</h2>
+                <div class="items flex-display-flex flex-direction-row-reverse">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex direction: column</h2>
+                <div class="items flex-display-flex flex-direction-column">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex direction: column-reverse</h2>
+                <div class="items flex-display-flex flex-direction-column-reverse">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex wrap : nowrap (default)</h2>
+                <div class="items flex-display-flex">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex wrap : wrap</h2>
+                <div class="items flex-display-flex flex-wrap-wrap">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                    <div class="item">item 4</div>
+                    <div class="item">item 5</div>
+                    <div class="item">item 6</div>
+                    <div class="item">item 7</div>
+                    <div class="item">item 8</div>
+                    <div class="item">item 9</div>
+                    <div class="item">item 11</div>
+                    <div class="item">item 12</div>
+                    <div class="item">item 13</div>
+                    <div class="item">item 14</div>
+                    <div class="item">item 15</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">flex wrap : wrap-reverse</h2>
+                <div class="items flex-display-flex flex-wrap-wrap-reverse">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                    <div class="item">item 4</div>
+                    <div class="item">item 5</div>
+                    <div class="item">item 6</div>
+                    <div class="item">item 7</div>
+                    <div class="item">item 8</div>
+                    <div class="item">item 9</div>
+                    <div class="item">item 11</div>
+                    <div class="item">item 12</div>
+                    <div class="item">item 13</div>
+                    <div class="item">item 14</div>
+                    <div class="item">item 15</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content: flex-start (default)</h2>
+                <div class="items flex-display-flex">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content: flex-end</h2>
+                <div class="items flex-display-flex flex-justify-content-f-end">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content:center</h2>
+                <div class="items flex-display-flex flex-justify-content-center">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content:space-between</h2>
+                <div class="items flex-display-flex flex-justify-content-space-between">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content:space-around</h2>
+                <div class="items flex-display-flex flex-justify-content-space-around">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">justify-content:space-evenly</h2>
+                <div class="items flex-display-flex flex-justify-content-space-evenly">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="title">align-items: strectch (default)</h2>
+                <div class="items flex-display-flex card-min-height flex-align-items-strectch">
+                    <div class="item-no-height">item 1</div>
+                    <div class="item-no-height">item 2</div>
+                    <div class="item-no-height">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-items: flex-start</h2>
+                <div class="items flex-display-flex card-min-height flex-align-items-flex-start">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-items: flex-end</h2>
+                <div class="items flex-display-flex card-min-height flex-align-items-flex-end">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-items: baseline</h2>
+                <div class="items flex-display-flex card-min-height flex-align-items-baseline">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <h2 class="title">align-content: strectch (default)</h2>
+                <div class="items flex-display-flex flex-wrap-wrap card-min-height flex-align-content-strectch">
+                    <div class="item-no-height">item 1</div>
+                    <div class="item-no-height">item 2</div>
+                    <div class="item-no-height">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-content: flex-start</h2>
+                <div class="items flex-display-flex flex-wrap-wrap card-min-height flex-align-content-flex-start">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-content: flex-end</h2>
+                <div class="items flex-display-flex flex-wrap-wrap card-min-height flex-align-content-flex-end">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-content: center</h2>
+                <div class="items flex-display-flex flex-wrap-wrap card-min-height flex-align-content-center">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">align-content: baseline</h2>
+                <div class="items flex-display-flex flex-wrap-wrap card-min-height flex-align-content-baseline">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+
+        </section>
+        <section class="app-panel">
+
+            <div class="card">
+                <h2 class="title">Pseudo-class : active</h2>
+                <a class="pseudo-class-active" href="https://www.google.com" target="_blank">Google</a>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Pseudo-class : first-child</h2>
+                <div class="items flex-display-flex pseudo-class-first-child">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-class : last-child</h2>
+                <div class="items flex-display-flex pseudo-class-last-child">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Pseudo-class : nth-child(2)</h2>
+                <div class="items flex-display-flex pseudo-class-nth-child">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-class : nth-last-child(2)</h2>
+                <div class="items flex-display-flex pseudo-class-nth-last-child">
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                    <div class="item">item 4</div>
+                    <div class="item">item 5</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Pseudo-class : first-of-type</h2>
+                <div class="items flex-display-flex pseudo-class-first-of-type">
+                    <p class="item">item 0 p</p>
+                    <div class="item">item 1</div>
+                    <div class="item">item 2</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-class : nth-of-type</h2>
+                <div class="items flex-display-flex pseudo-class-nth-of-type">
+                    <p class="item">item 0 p</p>
+                    <div class="item">item 1 div</div>
+                    <div class="item">item 2 div</div>
+                    <div class="item">item 3</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-class : nth-last-of-type</h2>
+                <div class="items flex-display-flex pseudo-class-nth-last-of-type">
+                    <p class="item">item 0 p</p>
+                    <div class="item">item 1 div</div>
+                    <div class="item">item 2 div</div>
+                    <div class="item">item 4 div</div>
+                    <p class="item">item 5 p</p>
+                    <div class="item">item 6 div</div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-class : only-of-type</h2>
+                <div class="items flex-display-flex pseudo-class-only-of-type">
+                    <div class="item">item 1 div</div>
+                    <div class="item">item 2 div</div>
+                    <div class="item">item 4 div</div>
+                    <p class="item">item 5 p</p>
+                    <div class="item">item 6 div</div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <h2 class="title">Pseudo-element : after</h2>
+                <div class="items flex-display-flex flex-direction-column pseudo-element-after">
+                    <div>welocme :: </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Pseudo-element : before</h2>
+                <div class="items flex-display-flex flex-direction-column pseudo-element-before">
+                    <div> :: welocme </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Pseudo-element : first-letter</h2>
+                <div class="items flex-display-flex flex-direction-column pseudo-element-first-letter">
+                    <div> welocme to first letter </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="title">Pseudo-element : first-line</h2>
+                <div class="items flex-display-flex flex-direction-column pseudo-element-first-line">
+                    <div> welocme to first line pesudo element implementation for learning purpose</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
